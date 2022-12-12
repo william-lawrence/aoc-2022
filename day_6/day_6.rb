@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # --- Day 6: Tuning Trouble ---
 # The preparations are finally complete; you and the Elves leave camp on foot and begin to make your way toward the star fruit grove.
 
@@ -35,7 +37,7 @@ message = File.read('./day_6_input.txt').chars
 answer = String.new
 
 message.count.times do |i|
-  chunk = message.slice i..i+3
+  chunk = message.slice i..i + 3
 
   if chunk.uniq.count == 4
     answer = i + 4
@@ -62,12 +64,11 @@ puts "Part 1 solution: #{answer}" # 1655 is the correct answer for part 1
 ############
 ## PART 2 ##
 ############
-
 message = File.read('./day_6_input.txt').chars
 answer = String.new
 
 message.count.times do |i|
-  chunk = message.slice i..i+13
+  chunk = message.slice i..i + 13
 
   if chunk.uniq.count == 14
     answer = i + 14
